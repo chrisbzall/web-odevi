@@ -1,0 +1,17 @@
+<h1>Thank you for your submission!</h1>
+<p>Contact Info:</p>
+<div id="submitted-data"></div>
+
+<script>
+  // Retrieve form data from localStorage
+  const formData = JSON.parse(localStorage.getItem('formData'));
+
+  // Display the submitted form information
+  const submittedData = document.getElementById('submitted-data');
+  submittedData.innerHTML = `
+    <p>Email: ${formData.email}</p>
+  `;
+
+  // Clear the form data from localStorage
+  localStorage.removeItem('formData');
+</script>
