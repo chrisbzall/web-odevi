@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head> 
+  <script>
+      function updateTime() {
+        const now = new Date();
+        const hours = now.getHours();
+        const minutes = now.getMinutes();
+        const seconds = now.getSeconds();
+        const timeString = hours.toString().padStart(2, '0') + ':' + 
+                           minutes.toString().padStart(2, '0') + ':' +
+                           seconds.toString().padStart(2, '0');
+        document.getElementById('time').textContent = timeString;
+      }
+      
+      setInterval(updateTime, 1000);
+    </script>  
+  <meta charset="UTF-8">
+  <title>My Personal Website</title>
+  <!-- Link to Bootstrap CSS -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <!-- Link to custom CSS -->
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<!-- Navbar -->
+<nav class="navbar navbar-expand-lg navbar-light bg-light">
+  <a class="navbar-brand" href="home1.html">My Website</a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+  <div class="collapse navbar-collapse" id="navbarNav">
+    <ul class="navbar-nav">
+      <li class="nav-item active">
+        <a href="home1.html" class="btn btn-primary">Home</a>
+
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="resume.html">Resume</a>
+      </li>
+ 
+
+      <li class="nav-item">
+        <a class="nav-link" href="#about">About</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="contact.html">Contact</a></li>
+      </li>
+       <li class="nav-item">
+        <a class="nav-link" href="login.html">Login</a>
+      </li>
+    </ul>
+  </div>
+<span id="time"></span></p>
+</nav>
+
+<!-- Header -->
+<div class="jumbotron text-center">
+  <h1>Welcome To My City</h1>
+  <p>Here, you can learn more about me and my hometown</p>
+</div>
+
+<!-- Main content -->
+<div class="container">
+  <div class="row">
+    <div class="col-md-8">
+      <h2>Douala</h2>
+<h5>The current time in Douala is: <span id="time"></span></h5>
+      <p>I am from a Big town called Douala,Douala, city and chief port of Cameroon. It is situated on the southeastern shore of the Wouri River estuary, on the Atlantic Ocean coast about 130 miles (210 km) west of Yaoundé. Douala served as the capital of the German Kamerun protectorate from 1884 to 1902.</p>
+      <p>One of my favorite things about Douala is the Ngodo festival. Every year, people from all over the state come to Douala to enjoy the Festival, games, and food . It's a great way to celebrate the end of rain season and have some fun with friends and family.</p>
+    </div>
+    <div class="col-md-4">
+
+      <h2>Douala</h2>
+      <img src="https://th.bing.com/th/id/OIP.6nSd23qF7723vnapSDNTogHaL4?pid=ImgDet&rs=1/150" alt="Douala statut" class="img-fluid" style="width:200px;height:300px;">
+    </div>
+  </div>
+</div>
+
+<!-- About section -->
+<section id="about" class="bg-light">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-6">
+        <h2>About Me</h2>
+        <p>My name is christian  and I am a student at Sakarya University. In my free time, I enjoy playing soccer,computing and watching movies. I also love to travel and experience new cultures.</p>
+        <p>On this website, you can learn more about my hobbies, favorite sports teams, and events that I've attended. Feel free to connect with me on social media or send me a message!</p>
+      </div>
+      <div class="col-md-6">
+        <h2>My Hobbies</h2>
+        <ul>
+          <li>Soccer</li>
+          <li>Travel</li>
+          <li>Movies</li>
+          <li>computing</li>
+        </ul>
+        <h2>My Favorite Sports Teams</h2>
+        <ul>
+          <li>FC Barcelone</li>
+          <li>Fc Liverpool</li>
+          <li>Olympic Marseille</li>
+          <li>Besiktas</li>
+        </ul>
+</section>
+ <footer class="footer">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-4">
+        <h4>About Us</h4>
+        <p>Douala is my Home Town</p>
+      </div>
+      <div class="col-md-4">
+        <h4>Quick Links</h4>
+        <ul>
+          <li><a href="home1.html">Home</a></li>
+          <li><a href="resume.html">Resume</a></li>
+          <li><a href="about.html">about</a></li>
+          <li><a href="contact.html">Contact Us</a></li>
+        </ul>
+      </div>
+      <div class="col-md-4">
+        <h4>Contact Us</h4>
+        <ul>
+          <li><i class="fa fa-map-marker"></i> 123 sakarya serdivan</li>
+          <li><i class="fa fa-phone"></i> 9055550987</li>
+          <li><i class="fa fa-envelope"></i> christian.tchouandop@sakarya.com.tr</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</footer>
+
+</body>
+</html>
+         
+

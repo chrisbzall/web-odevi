@@ -1,0 +1,128 @@
+/* style.css */
+
+/* Set background color for body */
+body {
+  background-color: #f8f9fa;
+}
+
+/* Set text color for headings */
+h1, h2, h3, h4, h5, h6 {
+  color: #343a40;
+}
+
+/* Set link color and hover effect */
+a {
+  color: #007bff;
+  text-decoration: none;
+}
+a:hover {
+  color: #0056b3;
+  text-decoration: underline;
+}
+
+/* Set background color for navbar */
+.navbar {
+  background-color: #ffffff;
+}
+
+/* Set text color for navbar links */
+.navbar-nav .nav-link {
+  color: #343a40;
+}
+
+/* Set hover effect for navbar links */
+.navbar-nav .nav-link:hover {
+  color: #0056b3;
+}
+
+/* Set background color and text color for footer */
+footer {
+  background-color: #343a40;
+  color: #ffffff;
+}
+body {
+  background-color: #f6f6f6;
+  font-family: Arial, sans-serif;
+}
+
+nav {
+  background-color: #333;
+  color: white;
+}
+
+nav ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+}
+
+nav li {
+  margin: 0;
+}
+
+nav a {
+  display: block;
+  padding: 15px;
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+nav a:hover {
+  background-color: #555;
+}
+
+nav .active {
+  background-color: #4CAF50;
+}
+
+main {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 20px;
+  background-color: white;
+  border-radius: 10px;
+  box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.2);
+}
+
+h1 {
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+}
+
+label {
+  margin-top: 10px;
+  font-size: 18px;
+}
+
+input,
+textarea {
+  padding: 10px;
+  font-size: 16px;
+  border: none;
+  border-radius: 5px;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+}
+
+button[type="submit"] {
+  margin-top: 20px;
+  padding: 10px;
+  font-size: 18px;
+  border: none;
+  border-radius: 5px;
+  background-color: #4CAF50;
+  color: white;
+  cursor: pointer;
+  transition: background-color 0.2s ease;
+}
+
+button[type="submit"]:hover {
+  background-color: #3399ff;
+}
+
